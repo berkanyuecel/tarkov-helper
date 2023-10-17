@@ -1,0 +1,139 @@
+TRADER
+	-id
+	-name
+	-normalized name
+	-description
+	-resetTime
+	-currency : ITEM
+	-levels : TRADERLEVEL
+	-barters : BARTER
+	-cashOffers : TRADERCASHOFFER
+	
+ITEM
+	-id
+	-name
+	-normalized name
+	-short name
+	-description
+	-base price
+	-width
+	-heigth
+	-background color
+	-grid image link
+	-inspect image link
+	-types : ITEMTYPE
+	(-properties : ITEMPROPERTIES) erst später, ist zu viel
+	-conflicting items : ITEM
+	-accuracy modifier
+	-recoil modifier
+	-ergonomic modifier
+	-blocks headphone
+	-sell for : ITEMPRICE
+	-buy for : ITEMPRICE
+	-contains items : CONTAINEDITEM
+	-category : ITEMCATEGORY
+	-categories : ITEMCATEGORY
+	-weigth
+	-velocity
+	-loudness
+	-used in tasks : TASK
+	-received from tasks : TASK
+	-barters for : BARTER
+	-barters using : BARTER
+	-crafts for : CRAFT
+	-crafts using : CRAFT
+	-fleaMarketFee(price, intelCenterLevel, hideoutManagementLevel, count, requiredAll)
+	
+TRADERLEVEL
+	-id
+	-level
+	-required player level
+	-required reputation
+	-required commerce
+	-pay rate
+	-insurance rate
+	-repair cost multiplier
+	-barters : BARTER
+	-cashOffers : TRADERCASHOFFER
+	
+BARTER
+	-id
+	-trader : TRADER
+	-level
+	-taskUnlock : TASK
+	-required items : CONTAINEDITEM
+	-reward items : CONTAINEDITEM
+	
+TRADERCASHOFFER
+	-item : ITEM
+	-min trader level
+	-price
+	-currency
+	-currency Item - ITEM
+	-price RUB
+	-taskUnlock - TASK
+	
+ITEMTYPE enum
+	ammo, ammobox, any, armor, backpack, barter, container, glasses, grenade, gun, headphones, helmet, injectors, keys, markedOnly, meds, mods, noFlea, pistolgrip, preset,
+	provisions, rig, surpressor, wearable
+	
+ITEMPRICE
+	-vendor : VENDOR
+	-price
+	-currency
+	-currency item : ITEM
+	-price RUB
+	
+CONTAINEDITEM
+	-item : ITEM
+	-count
+	-quantity
+	
+ITEMCATEGORY
+	-id
+	-name
+	-normalized name
+	
+CRAFT
+	-id
+	-station : HIDEOUTSTATION
+	-level
+	-taskUnlock : TASK
+	-duration
+	-required items : CONTAINEDITEM
+	-required quest items : QUESTITEMS
+	-reward items : CONTAINEDITEM
+	
+VENDOR (wegen fleamarket)
+	-name
+	-normalized name
+	
+QUESTITEMS
+	-id
+	-name
+	-short name
+	-description
+	-normalized name
+	-width
+	-heigth
+	-grid image link
+	-inspect image link
+	
+HIDEOUTSTATION
+	-id
+	-name
+	-normalized name
+	-levels : HIDEOUTSTATIONLEVEL
+	-crafts : CRAFT
+	
+HIDEOUTSTATIONLEVEL
+	-id
+	-level
+	-construction time
+	-description
+	-item requirements : REQUIREMENTITEM
+	-station level requirement : REQUIREMENTHIDEOUTSTATIONLEVEL
+	-skil requirements : REQUIREMENTSKIL
+	-trader requirements : REQUIREMENTTRADER
+	-crafts : CRAFT
+	-bonuses : HIDEOUTSTATIONBONUSES
