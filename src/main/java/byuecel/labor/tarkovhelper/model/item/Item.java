@@ -1,6 +1,8 @@
 package byuecel.labor.tarkovhelper.model.item;
 
 import byuecel.labor.tarkovhelper.model.enums.ItemType;
+import byuecel.labor.tarkovhelper.model.hideout.Craft;
+import byuecel.labor.tarkovhelper.model.trader.Barter;
 
 public class Item {
     private int id;

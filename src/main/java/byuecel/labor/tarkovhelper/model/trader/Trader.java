@@ -2,43 +2,16 @@ package byuecel.labor.tarkovhelper.model.trader;
 
 import byuecel.labor.tarkovhelper.model.enums.CurrencyType;
 
-public class Trader {
+public class Trader extends Vendor{
 
-    private int id;
-    private String name;
-    private String normalizedName;
     private String biography;
     private String resetTime;
     private CurrencyType currency;
     private TraderLevel levels;
     private Barter barters;
-    private TraderCashOffer cashOffers;
+    private CashOffer[] cashOffers;
 
     public Trader() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getNormalizedName() {
-        return normalizedName;
-    }
-
-    public void setNormalizedName(String normalizedName) {
-        this.normalizedName = normalizedName;
     }
 
     public String getBiography() {

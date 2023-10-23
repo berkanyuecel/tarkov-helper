@@ -1,10 +1,11 @@
 package byuecel.labor.tarkovhelper.model.trader;
 
 import byuecel.labor.tarkovhelper.model.enums.CurrencyType;
+import byuecel.labor.tarkovhelper.model.item.ContainedItem;
 
 public class CashOffer {
     private int id;
-    private Item item;
+    private ContainedItem item;
     private int minTraderLevel;
     private int price;
     private int priceInRUB;

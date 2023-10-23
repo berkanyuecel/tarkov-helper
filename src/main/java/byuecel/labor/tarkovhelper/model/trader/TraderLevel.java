@@ -10,7 +10,7 @@ public class TraderLevel {
     private float insuranceRate;
     private float repairCostMultiplier;
     private Barter barters;
-    private TraderCashOffer cashOffers;
+    private CashOffer[] cashOffers;
 
     public TraderLevel() {
     }
