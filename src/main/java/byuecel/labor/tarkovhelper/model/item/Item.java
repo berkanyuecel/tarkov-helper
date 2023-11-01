@@ -1,5 +1,6 @@
 package byuecel.labor.tarkovhelper.model.item;
 
+import byuecel.labor.tarkovhelper.model.enums.BackgroundColorType;
 import byuecel.labor.tarkovhelper.model.enums.ItemType;
 import byuecel.labor.tarkovhelper.model.hideout.Craft;
 import byuecel.labor.tarkovhelper.model.trader.Barter;
@@ -9,12 +10,12 @@ public class Item {
     private String name;
     private String normalizedName;
     private String description;
-    private in basePrice;
+    private int basePrice;
     private int width;
     private int heigth;
     private BackgroundColorType backgroundColor;
     private ItemType type;
-    private float weigth;
+    private float weight;
     private Task[] usedInTasks;
     private Task[] receivedFromTasks;
     private Barter[] bartersFor;
@@ -57,11 +58,11 @@ public class Item {
         this.description = description;
     }
 
-    public in getBasePrice() {
+    public int getBasePrice() {
         return basePrice;
     }
 
-    public void setBasePrice(in basePrice) {
+    public void setBasePrice(int basePrice) {
         this.basePrice = basePrice;
     }
 
@@ -97,12 +98,12 @@ public class Item {
         this.type = type;
     }
 
-    public float getWeigth() {
-        return weigth;
+    public float getWeight() {
+        return weight;
     }
 
-    public void setWeigth(float weigth) {
-        this.weigth = weigth;
+    public void setWeight(float weight) {
+        this.weight = weight;
     }
 
     public Task[] getUsedInTasks() {
@@ -152,6 +153,4 @@ public class Item {
     public void setCraftsUsing(Craft[] craftsUsing) {
         this.craftsUsing = craftsUsing;
     }
-
-
 }

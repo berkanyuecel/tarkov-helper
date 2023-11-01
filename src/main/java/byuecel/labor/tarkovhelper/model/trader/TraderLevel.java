@@ -87,11 +87,11 @@ public class TraderLevel {
         this.barters = barters;
     }
 
-    public TraderCashOffer getCashOffers() {
+    public CashOffer[] getCashOffers() {
         return cashOffers;
     }
 
-    public void setCashOffers(TraderCashOffer cashOffers) {
+    public void setCashOffers(CashOffer[] cashOffers) {
         this.cashOffers = cashOffers;
     }
 }

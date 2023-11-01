@@ -23,11 +23,11 @@ public class CashOffer {
         this.id = id;
     }
 
-    public Item getItem() {
+    public ContainedItem getItem() {
         return item;
     }
 
-    public void setItem(Item item) {
+    public void setItem(ContainedItem item) {
         this.item = item;
     }
 

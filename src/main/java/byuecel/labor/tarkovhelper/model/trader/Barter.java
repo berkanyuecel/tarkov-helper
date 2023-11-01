@@ -45,19 +45,19 @@ public class Barter {
         this.taskUnlock = taskUnlock;
     }
 
-    public Item[] getRequiredItems() {
+    public ContainedItem[] getRequiredItems() {
         return requiredItems;
     }
 
-    public void setRequiredItems(Item[] requiredItems) {
+    public void setRequiredItems(ContainedItem[] requiredItems) {
         this.requiredItems = requiredItems;
     }
 
-    public Item[] getRewardItems() {
+    public ContainedItem[] getRewardItems() {
         return rewardItems;
     }
 
-    public void setRewardItems(Item[] rewardItems) {
+    public void setRewardItems(ContainedItem[] rewardItems) {
         this.rewardItems = rewardItems;
     }
 }
