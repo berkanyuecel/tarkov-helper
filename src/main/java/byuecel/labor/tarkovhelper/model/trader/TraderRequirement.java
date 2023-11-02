@@ -2,7 +2,7 @@ package byuecel.labor.tarkovhelper.model.trader;
 
 import byuecel.labor.tarkovhelper.model.enums.CurrencyType;
 
-public class Trader extends Vendor{
+public class TraderRequirement extends Vendor{
 
     private String biography;
     private String resetTime;
@@ -11,7 +11,7 @@ public class Trader extends Vendor{
     private Barter barters;
     private CashOffer[] cashOffers;
 
-    public Trader() {
+    public TraderRequirement() {
     }
 
     public String getBiography() {

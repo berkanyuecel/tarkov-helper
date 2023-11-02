@@ -1,7 +1,7 @@
 package byuecel.labor.tarkovhelper.model.hideout;
 
 import byuecel.labor.tarkovhelper.model.item.ContainedItem;
-import byuecel.labor.tarkovhelper.model.trader.Trader;
+import byuecel.labor.tarkovhelper.model.trader.TraderRequirement;
 
 public class StationLevel {
     private int id;
@@ -10,8 +10,8 @@ public class StationLevel {
     private String description;
     private ContainedItem[] requiredItems;
     private StationLevelRequirement stationLevelRequirement;
-    private Skill[] skillRequirements;
-    private Trader[] traderRequirements;
+    private SkillRequirement[] skillRequirements;
+    private TraderRequirement[] traderRequirements;
     private Craft[] crafts;
     private StationBonus[] bonuses;
 
@@ -66,19 +66,19 @@ public class StationLevel {
         this.stationLevelRequirement = stationLevelRequirement;
     }
 
-    public Skill[] getSkillRequirements() {
+    public SkillRequirement[] getSkillRequirements() {
         return skillRequirements;
     }
 
-    public void setSkillRequirements(Skill[] skillRequirements) {
+    public void setSkillRequirements(SkillRequirement[] skillRequirements) {
         this.skillRequirements = skillRequirements;
     }
 
-    public Trader[] getTraderRequirements() {
+    public TraderRequirement[] getTraderRequirements() {
         return traderRequirements;
     }
 
-    public void setTraderRequirements(Trader[] traderRequirements) {
+    public void setTraderRequirements(TraderRequirement[] traderRequirements) {
         this.traderRequirements = traderRequirements;
     }
 

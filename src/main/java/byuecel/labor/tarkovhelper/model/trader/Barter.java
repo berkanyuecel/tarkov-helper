@@ -4,7 +4,7 @@ import byuecel.labor.tarkovhelper.model.item.ContainedItem;
 
 public class Barter {
     private int id;
-    private Trader trader;
+    private TraderRequirement trader;
     private int level;
     private Task taskUnlock;
     private ContainedItem[] requiredItems;
@@ -21,11 +21,11 @@ public class Barter {
         this.id = id;
     }
 
-    public Trader getTrader() {
+    public TraderRequirement getTrader() {
         return trader;
     }
 
-    public void setTrader(Trader trader) {
+    public void setTrader(TraderRequirement trader) {
         this.trader = trader;
     }
 
